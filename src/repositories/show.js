@@ -1,5 +1,6 @@
-import shows from '../app/shows/model'
+import Show from '../app/shows/model'
 
-const findByType = (type) => {
-  
+export const findById = async (id) => {
+  const result = await Show.findById(id)
+  return result
 }
